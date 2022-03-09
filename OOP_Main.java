@@ -12,7 +12,7 @@ public class OOP_Main {
         System.out.println("Please select the operation:\n1 - Addition two numbers\n2 - Subtract two numbers\n3 - Multiply two numbers\n4 - Divide two numbers\n5 - Addition several numbers\n6 - Multiply several numbers\n7 - Calculate the area of a circle\nPlease enter your answer:");
             char izbor=reader.nextLine().charAt(0);
 
-            if (Character.toLowerCase(izbor)=='1'){
+            if (izbor=='1'){
                 System.out.print(unesitePrviBroj);
                 myCalculator.setBrojA(reader.nextInt());
                 System.out.print(unesiteDrugiBroj);
@@ -21,7 +21,7 @@ public class OOP_Main {
                 System.out.println(sabiranje);
             }
 
-            else if (Character.toLowerCase(izbor)=='2'){
+            else if (izbor=='2'){
                 System.out.print(unesitePrviBroj);
                 myCalculator.setBrojA(reader.nextInt());
                 System.out.print(unesiteDrugiBroj);
@@ -30,7 +30,7 @@ public class OOP_Main {
                 System.out.println(oduzimanje);
             }
 
-            else if (Character.toLowerCase(izbor)=='3'){
+            else if (izbor=='3'){
                 System.out.print(unesitePrviBroj);
                 myCalculator.setBrojA(reader.nextInt());
                 System.out.print(unesiteDrugiBroj);
@@ -39,7 +39,7 @@ public class OOP_Main {
                 System.out.println(mnozenje);
             }
 
-            else if (Character.toLowerCase(izbor)=='4'){
+            else if (izbor=='4'){
                 System.out.print(unesitePrviBroj);
                 myCalculator.setBrojA(reader.nextInt());
                 System.out.print(unesiteDrugiBroj);
@@ -48,7 +48,7 @@ public class OOP_Main {
                 System.out.println(dijeljenje);
             }
 
-            else if (Character.toLowerCase(izbor)=='5'){
+            else if (izbor=='5'){
                 System.out.println("How many numbers would you like to use?");
                     int n=reader.nextInt();
                     int sum=0;
@@ -63,7 +63,7 @@ public class OOP_Main {
                 System.out.println("The sum of numbers is " + sum);
             }
 
-            else if (Character.toLowerCase(izbor)=='6'){
+            else if (izbor=='6'){
                 System.out.println("How many numbers would you like to use?");
                     int n=reader.nextInt();
                                     System.out.println("Please enter the numbers you want to multiply: ");
@@ -78,7 +78,7 @@ public class OOP_Main {
                 System.out.println("The sum of numbers is " + result);
             }
 
-            else if (Character.toLowerCase(izbor)=='7') {
+            else if (izbor=='7') {
                 System.out.print("Please enter the radius: ");
                 myCalculator.setRadius(reader.nextDouble());
                 double povrsinaKruga = myCalculator.povrsinaKruga();
